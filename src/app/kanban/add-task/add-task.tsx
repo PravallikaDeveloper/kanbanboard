@@ -54,7 +54,7 @@ const AddTask = (props: TaskFormProps) => {
     return (
         <form
             onSubmit={handleSubmit(onSubmit)}
-            className="max-w-xl mx-auto bg-white p-6 rounded-2xl shadow-md space-y-4 w-100"
+            className="max-w-xl mx-auto bg-white p-6 rounded-2xl shadow-md space-y-4 lg:w-100 md:w-100 sm:w-full"
         >
             <h2 className="text-xl font-bold mb-4">{props.mode === 'edit' ? 'Edit Task' : 'Add a New Task'}</h2>
 
