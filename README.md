@@ -35,5 +35,8 @@ Installation
     - Run the app locally 
         - npm run dev
 
+    - LIVE Demo
+        https://kanbanboard-git-main-pravallikadevelopers-projects.vercel.app/
+        
 
 
