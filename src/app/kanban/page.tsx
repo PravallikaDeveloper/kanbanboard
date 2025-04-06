@@ -85,10 +85,10 @@ export default function KanbanBoard() {
                     </Dialog>
                 </div>
                 <div className="border-b border-gray-300 relative top-20"></div>
-                <div className="mt-4 p-2 flex justify-between w-300">
+                <div className="mt-4 p-2 flex flex-col gap-4 sm:flex-row sm:justify-between sm:flex-wrap">
                     {
                         kanban.map((item) =>
-                            <div key={item.id} className="w-full mr-2 px-4 py-2 task-section">
+                            <div key={item.id} className="w-full sm:w-[32%] px-2 py-2 task-section">
                                 <div className="">
                                     <label data-status={item.status}>{item.text}</label>
                                 </div>
@@ -105,7 +105,7 @@ export default function KanbanBoard() {
                                             <>
                                                 {
                                                     item.id === c.column_id && (
-                                                        <div key={item.id} className="bg-white p-4 h-30 mb-2 rounded-lg w-80 cursor-move hover:bg-gray-200" draggable
+                                                        <div key={c.column_id} className="bg-white p-4 mb-2 rounded-lg w-full cursor-move hover:bg-gray-200 border border-gray-200" draggable
                                                             onDrag={() => { onDragCard(c.id) }}
                                                             onClick={()=>{ editRecord(c) }}
                                                             >
