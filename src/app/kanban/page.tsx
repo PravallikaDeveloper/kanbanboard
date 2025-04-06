@@ -88,7 +88,7 @@ export default function KanbanBoard() {
                 <div className="mt-4 p-2 flex flex-col gap-4 sm:flex-row sm:justify-between sm:flex-wrap">
                     {
                         kanban.map((item) =>
-                            <div key={item.id} className="w-full sm:w-[32%] px-2 py-2 task-section">
+                            <div key={item.id} className="min-w-[300px] px-2 py-2 border-gray-200 last:border-r-0 sm:border-r-0 md:border-r">
                                 <div className="">
                                     <label data-status={item.status}>{item.text}</label>
                                 </div>
