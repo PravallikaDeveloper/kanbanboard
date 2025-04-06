@@ -1,0 +1,24 @@
+
+.task-section:not(:last-child) {
+    border-right: 1px solid oklch(87.2% .01 258.338) ;
+}
+
+[data-status] {
+    padding: 4px 16px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+[data-status="todo"] {
+    background-color: #F2CECE;
+}
+
+[data-status="inProgress"] {
+    background-color: #E0CEF2;
+}
+
+[data-status="completed"] {
+    background-color: #CEF2CE;
+}
